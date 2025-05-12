@@ -1,0 +1,8 @@
+.progress{
+    width: 400px;
+    height: 25px;
+    border-radius: 15Px;
+    margin-top: 100px;
+    display: flex;
+    margin-left:550px;
+}
