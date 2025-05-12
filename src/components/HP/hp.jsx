@@ -11,7 +11,7 @@ const pourcentage = (vie/maxpv )* 100;
     aria-valuemin={0}
     aria-valuemax={100}
     >
-    <div className="progress-bar text-bg-danger" style={{ width: {pourcentage}, border: "1px solid black"}}>
+    <div className="progress-bar text-bg-danger" style={{ width: `${pourcentage}%`}}>
     </div>
     </div>
 

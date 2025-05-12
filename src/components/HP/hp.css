@@ -2,7 +2,13 @@
     width: 400px;
     height: 25px;
     border-radius: 15Px;
-    margin-top: 100px;
+
     display: flex;
-    margin-left:550px;
+    margin-left:580px;
+}
+.textvie{
+    margin-left: 580px;
+}
+.pv{
+    margin-left: 200px;
 }
