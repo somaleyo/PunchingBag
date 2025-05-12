@@ -1,7 +1,7 @@
 import './hp.css'
 
-export default function Hp(){
-
+const  Hp = ({vie, maxpv})=>{
+const pourcentage = (vie/maxpv )* 100;
     return(
         <div
     className="progress"
@@ -11,9 +11,10 @@ export default function Hp(){
     aria-valuemin={0}
     aria-valuemax={100}
     >
-    <div className="progress-bar text-bg-danger" style={{ width: "100%", border: "1px solid black"}}>
+    <div className="progress-bar text-bg-danger" style={{ width: {pourcentage}, border: "1px solid black"}}>
     </div>
     </div>
 
     )
 }
+export default  Hp
