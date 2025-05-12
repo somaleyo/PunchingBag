@@ -11,8 +11,7 @@ export default function Hp(){
     aria-valuemin={0}
     aria-valuemax={100}
     >
-    <div className="progress-bar text-bg-danger" style={{ width: "100%" }}>
-        100/100     
+    <div className="progress-bar text-bg-danger" style={{ width: "100%", border: "1px solid black"}}>
     </div>
     </div>
 

@@ -1,12 +1,10 @@
 import './punch.css'
 
-export  default function Punch(){
-
+const Punch= ({onclick, text, ClassName})=>{
     return(
         <> 
-            <div className="btn-holder">
-                <button className="btn btn-punch">Donne a sa mere🥊</button>
-                <button className="btn btn-restart">Recommencer</button>
+            <div className="btn-holder" onClick={onclick}>
+                <button className={`btn ${ClassName}`}>{text}</button>
             </div>
             
         </>
@@ -14,3 +12,4 @@ export  default function Punch(){
     )
 
 }
+export default Punch

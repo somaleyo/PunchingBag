@@ -4,5 +4,10 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    
+
+}
+
+.bag{
+    width: 180px;
+    height: 450px;
 }
