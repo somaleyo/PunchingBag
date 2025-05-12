@@ -10,6 +10,7 @@ const[isDestroyed,setIsDestroyed] = useState(false)
 
 const HandlePunch = () =>{
     const newhealth = Math.max(0,health-10)
+    setHealth(newhealth)
     if (newhealth === 0){
         setIsDestroyed(true)
     }
@@ -23,7 +24,7 @@ const HandleRestart = ()=>{
     return(
         <>
             <div  className="text-white">
-                <h1>Sac de frappe</h1>
+                
                 <Bag isDestroyed={isDestroyed} />
                 <div className="w-full mb-4">
                     <div className="textvie flex justify-between mb-1">
@@ -34,8 +35,8 @@ const HandleRestart = ()=>{
                 </div>
                 <div>
                     {isDestroyed ?(
-                        <Punch onclick={HandlePunch} text="PUNCH" className="btn-punch"/>
-                    ):( <Punch onclick={HandleRestart} text="Recommencer" className="btn-restart"/>
+                      <Punch onclick={HandleRestart} text="Recommencer" ClassName="btn-restart"/>
+                    ):(   <Punch onclick={HandlePunch} text="PUNCH" ClassName="btn-punch"/>
                     )}
                 </div>
             </div>
