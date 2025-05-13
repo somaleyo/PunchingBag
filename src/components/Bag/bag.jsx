@@ -1,6 +1,6 @@
 import './bag.css'
-import sac from '../../src/assets/images/bag-burst.png'
-import sacasse from './../../src/assets/images/bag.png'
+import sac from '/src/assets/images/bag-burst.png'
+import sacasse from '/src/assets/images/bag.png'
  const Bag =({isDestroyed ,Scale})=>{
 
 
