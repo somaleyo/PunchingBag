@@ -3,17 +3,26 @@ import Hp from "./HP/hp";
 import Bag from "./Bag/bag";
 import Punch from "./Punch/punch";
 
+
 export default function Punchingbag(){
 const maxhealth = 100
 const [health, setHealth] = useState(maxhealth)
 const[isDestroyed,setIsDestroyed] = useState(false)
-
+const [scale, setScale] = useState(1)
 const HandlePunch = () =>{
+    setScale(0.8)
+    console.log("tape");
+    
+    setTimeout(() => {
+        setScale(1)
+    }, 300);
     const newhealth = Math.max(0,health-10)
     setHealth(newhealth)
+    
     if (newhealth === 0){
         setIsDestroyed(true)
     }
+    
 }
 
 const HandleRestart = ()=>{
@@ -25,7 +34,7 @@ const HandleRestart = ()=>{
         <>
             <div  className="text-white">
                 
-                <Bag isDestroyed={isDestroyed} />
+                <Bag isDestroyed={isDestroyed} Scale={scale} />
                 <div className="w-full mb-4">
                     <div className="textvie flex justify-between mb-1">
                     <span className="text-sm font-medium">Points de vie:</span>
